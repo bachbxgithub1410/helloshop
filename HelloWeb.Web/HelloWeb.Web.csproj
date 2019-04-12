@@ -205,6 +205,16 @@
     <Content Include="Scripts\jquery-3.3.1.slim.min.map" />
     <Content Include="Scripts\jquery-3.3.1.min.map" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\HelloWeb.Common\HelloWeb.Common.csproj">
+      <Project>{47ab4ca1-d0c2-4be0-bf83-7d8fbf69dda5}</Project>
+      <Name>HelloWeb.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\HelloWeb.Service\HelloWeb.Service.csproj">
+      <Project>{820cf851-0ac8-4b29-8727-79839ac29a98}</Project>
+      <Name>HelloWeb.Service</Name>
+    </ProjectReference>
+  </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>

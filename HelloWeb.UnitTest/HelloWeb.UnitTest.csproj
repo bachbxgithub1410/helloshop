@@ -49,11 +49,33 @@
     <Reference Include="System.Core" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="UnitTest1.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="app.config" />
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\HelloWeb.Common\HelloWeb.Common.csproj">
+      <Project>{47ab4ca1-d0c2-4be0-bf83-7d8fbf69dda5}</Project>
+      <Name>HelloWeb.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\HelloWeb.Data\HelloWeb.Data.csproj">
+      <Project>{a668b19a-84c6-4a0c-b31e-2f3ecb198e74}</Project>
+      <Name>HelloWeb.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\HelloWeb.Model\HelloWeb.Model.csproj">
+      <Project>{93d97f64-18c8-4eb8-bf51-11701bfa3e3a}</Project>
+      <Name>HelloWeb.Model</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\HelloWeb.Service\HelloWeb.Service.csproj">
+      <Project>{820cf851-0ac8-4b29-8727-79839ac29a98}</Project>
+      <Name>HelloWeb.Service</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\HelloWeb.Web\HelloWeb.Web.csproj">
+      <Project>{0eb97dbf-58e5-4401-b372-b11bba5ba6f9}</Project>
+      <Name>HelloWeb.Web</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets" Condition="Exists('$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets')" />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
